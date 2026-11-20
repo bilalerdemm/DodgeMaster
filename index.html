@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b1b">
+  <title>Dodge Master</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Dodge Master ana sayfa"><span class="brand-icon">✦</span> DODGE<span>MASTER</span></a>
+      <span class="status"><i></i> SİSTEM AKTİF</span>
+    </header>
+    <section class="intro">
+      <div><p class="eyebrow">REFLEKSLERİNİ TEST ET <span> / </span> 01</p><h1>KAÇMAYA <em>HAZIR MISIN?</em></h1><p class="description">Engellerden sıyrıl, ritmi yakala ve kendi rekorunu kır.</p></div>
+      <div class="desktop-hint"><span>←</span><span>→</span><small>HAREKET ET</small></div>
+    </section>
+    <section class="game-shell" aria-label="Oyun alanı">
+      <div class="hud"><div><span>SKOR</span><strong id="score">0000</strong></div><div class="hud-center lives" id="lives" role="status" aria-label="3 can kaldı"><span class="lives-label">CAN</span><strong aria-hidden="true">♥ ♥ ♥</strong></div><div class="best"><span>EN İYİ SKOR</span><strong id="best">0000</strong></div></div>
+      <div class="game-area" id="gameArea">
+        <canvas id="game" aria-label="Dodge Master oyun alanı"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="overlay-content"><div class="overlay-symbol">✦</div><p class="eyebrow" id="overlayLabel">MEYDAN OKUMAYA HAZIR OL</p><h2 id="overlayTitle">DODGE <em>MASTER</em></h2><p id="overlayText">Gelen engellerden kaç ve mümkün olduğunca uzun süre hayatta kal.</p><button id="startButton" class="primary-button" type="button">OYUNA BAŞLA <span>↗</span></button><small>YÖN TUŞLARINI KULLAN VEYA DOKUN</small></div>
+        </div>
+      </div>
+      <div class="game-footer"><span><i></i> REFLEKSLERİNİ KONUŞTUR</span><span>İYİ ŞANSLAR, OYUNCU <b>✦</b></span></div>
+    </section>
+    <div class="touch-controls" aria-label="Dokunmatik hareket kontrolleri"><button id="leftButton" type="button" aria-label="Sola hareket et">←</button><span>HAREKET ETMEK İÇİN BASILI TUT</span><button id="rightButton" type="button" aria-label="Sağa hareket et">→</button></div>
+    <footer><span>© DODGE MASTER</span><span>OYUN BAŞLASIN <b>✳</b></span></footer>
+  </main>
+</body>
+</html>
